@@ -1,14 +1,15 @@
 from django.shortcuts import render
 from django.http import HttpResponse
-from datetime import datetime
+from datetime import datetime, date
 
 def index(request):
     #set the date and time format
     date_format = "%m-%d-%Y %H:%M:%S"
     
     #convert string to actual date and time
-    time1  = datetime.strptime('3-29-2019 00:00:00', date_format)
-    time2  = datetime.strptime('8-02-2008 01:30:00', date_format)
+    time1  = datetime.now()
+    time2  = datetime.strptime('3-29-2019 23:00:00', date_format)
+    
     
     #find the difference between two dates
     diff = time2 - time1
@@ -47,6 +48,6 @@ def index(request):
     print (str(minutes) + ' Minutes')
     
     #to print seconds, you know already ;)
-    
     print (str(diff.seconds) + ' secs')
-    return HttpResponse(diff)
+
+    return HttpResponse("The calculated time from now untill the brexit is: %s ." % (diff))
