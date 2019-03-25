@@ -3,12 +3,14 @@ package edu.ap.spring.transaction;
 import java.security.*;
 import java.util.ArrayList;
 
+import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
 import edu.ap.spring.service.BlockChain;
 import edu.ap.spring.service.StringUtil;
 
 @Component
+@Scope("prototype")
 public class Transaction {
 
 	public String transactionId; // contains a hash of transaction
