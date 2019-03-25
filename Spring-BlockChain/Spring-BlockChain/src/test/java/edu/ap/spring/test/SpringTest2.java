@@ -75,6 +75,6 @@ public class SpringTest2 {
 				String.class);
 
 		assertTrue(response1.getBody().contains("90.0"));
-		assertTrue(response2.getBody().contains("10.0"));
+		assertTrue(response2.getBody().contains("10.0"));*/
 	}
 }

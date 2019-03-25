@@ -1,0 +1,11 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - BlockChainApplication",
+            "request": "launch",
+            "mainClass": "edu.ap.spring.BlockChainApplication",
+            "projectName": "spring-blockchain"
+        }
+    ]
+}

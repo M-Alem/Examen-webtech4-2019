@@ -23,8 +23,8 @@ public class Wallet {
 	@Autowired
 	private Transaction newTransaction;
 
-	private PrivateKey privateKey;
-	private PublicKey publicKey;
+	public PrivateKey privateKey;
+	public PublicKey publicKey;
 
 	public HashMap<String, TransactionOutput> UTXOs = new HashMap<String, TransactionOutput>();
 
